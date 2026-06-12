@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="controls">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search By Name or Symbol"
+            >
+
+            <button id="searchBtn">Search</button>
+
+            <button id="sortMarketCap">
+                Sort By Market Cap
+            </button>
+
+            <button id="sortPercentage">
+                Sort By Percentage
+            </button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Coin</th>
+                    <th>Symbol</th>
+                    <th>Current Price</th>
+                    <th>Total Volume</th>
+                    <th>Market Cap</th>
+                    <th>Price Change %</th>
+                </tr>
+            </thead>
+
+            <tbody id="tableBody"></tbody>
+        </table>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
